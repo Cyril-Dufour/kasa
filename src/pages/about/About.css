@@ -1,0 +1,10 @@
+.style {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+text-align: center;
+align-items: center;
+gap: 2rem;
+margin-bottom: 20px;
+color: var(--red);
+}

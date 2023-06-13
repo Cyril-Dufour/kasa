@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    padding: 15px;
+    font-weight: 600;
+    max-width: 92%;
+}
+
+.navbar_logo {
+    margin-right: auto;
+}
+
+.nav-1 {
+    margin-right: 40px;
+    font-size: large;
+    
+}
+
+.nav-2 {
+    font-size: large;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

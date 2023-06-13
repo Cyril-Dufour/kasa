@@ -1,0 +1,21 @@
+.container{
+    max-width: 48%;
+    background-color: #F7F7F7;
+}
+.textVisible {
+    display: flex;
+    justify-content: space-between ;
+    background-color: #ff6060;
+    color: white;
+    border-radius: 5px;
+    min-height: 52px;
+    align-items: center;
+   
+}
+.container p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  
+}

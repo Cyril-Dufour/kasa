@@ -1,0 +1,71 @@
+.photo-appart img {
+    background-color: white;
+    max-height: 400px;
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 92%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.info-appart {
+    margin-left: 60px;
+    align-items: center;
+    font-weight: 600;
+    max-width: 92%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 92%;
+    margin-bottom: 30px;
+    color: var(--red);
+}
+
+.titre-appart p {
+    background-color: var(--red);
+    color: white;
+    width: 45%;
+    border-radius: 25px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.proprietaire-appart {
+    margin-left: 65rem;
+}
+
+.tags-appart {
+    display: flex;
+}
+
+.header-appart {
+    display: flex;
+}
+
+.badge-proprietaire-appart {
+    border: 2px solid rgb(170, 167, 167);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(170, 167, 167);
+    margin-left: 25px;
+}
+
+.nom-proprietaire {
+    display: flex;
+}
+
+.star-proprietaire-appart {
+    text-align: center;
+    font-size: x-large;
+}
+
+.dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+
+
+
