@@ -1,9 +1,13 @@
 import React from 'react'
-import "./ErreurPage.css"
+import "./PageErreur.css"
+
 
 function PageErreur() {
-  return (
-    <div className='page'>PageErreur</div>
+  return (<>
+  <div className='page'>
+    <div className='error'>404</div>
+    <div className='texte'>Oups ! La page que vous demandez n'existe pas.</div>
+    </div></>
   )
 }
 

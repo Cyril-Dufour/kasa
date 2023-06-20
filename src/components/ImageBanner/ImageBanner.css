@@ -1,12 +1,56 @@
 .image__banner img {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    inset: 0;
     border-radius: 25px;
-    background-size: cover;
-    padding: 20px;
     max-height: 300px;
     width: 92%;
     margin: 40px auto;
     object-fit: cover;
-
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
+
+.image__banner{
+    position: relative;
+    
+}
+
+
+.image__banner .show{
+    opacity: 1;
+}
+
+.image__banner .btn-next {
+    cursor: pointer;
+    width: 5rem;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    top: 0;
+    border-radius: 25px;
+    position: absolute;
+    border-color: transparent;
+    color: white;
+    font-size: 80px;
+    margin: 40px auto;
+    margin-left: 4rem;
+}
+
+.image__banner .btn-previous {
+    cursor: pointer;
+    width: 5rem;
+    height: 300px;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    top: 0;
+    border-radius: 25px;
+    position: absolute;
+    border-color: transparent;
+    color: white;
+    font-size: 80px;
+    margin: 40px auto;
+    margin-right: 4rem;
+}
+

@@ -12,17 +12,21 @@
     filter: grayscale(30%);
 }
 .titre-location {
-    width: 20%;
+    width: 12%;
     margin-left: 10px;
-    color: rgb(15, 14, 14);
+    color: white;
     position:absolute;
+    margin-top: -60px;
+    font-size: 18px;
+    
 }
 
 @media screen and (width <=700px) {
     .apart {
         flex-basis: 100%;
-
-
-
+    }
+    .titre-location {
+        width: 50%;
+        font-size: large;
     }
 }

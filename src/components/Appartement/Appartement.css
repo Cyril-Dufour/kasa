@@ -32,7 +32,10 @@
 }
 
 .proprietaire-appart {
-    margin-left: 65rem;
+    margin-left: 75rem;
+    margin-top: -10rem;
+  
+
 }
 
 .tags-appart {
@@ -41,6 +44,7 @@
 
 .header-appart {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .badge-proprietaire-appart {
@@ -49,12 +53,9 @@
     width: 60px;
     border-radius: 50%;
     background-color: rgb(170, 167, 167);
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
-.nom-proprietaire {
-    display: flex;
-}
 
 .star-proprietaire-appart {
     text-align: center;
@@ -68,4 +69,21 @@
 }
 
 
+.Dropdown_container__ROtSJ {
+    width: 50%;
+}
+
+.nom-proprietaire h3 {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (width <=700px) {
+    .dropdown {
+        display:inline;
+        
+        
+
+    }
+}
 

@@ -7,7 +7,7 @@ import Home from "./pages/Home/Home"
 import About from "./pages/about/About"
 import Footer from './components/Footer/Footer'
 import Appartement from './components/Appartement/Appartement'
-import PageErreur from './components/PageErreur/PageErreur'
+import PageErreur from './pages/PageErreur/PageErreur'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />}/>
         <Route path='/appartement' element={<Appartement />} />
-        <Route path='/erreur' element={<PageErreur />} />
+        <Route path='/pageErreur' element={<PageErreur />} />
       </Routes>
       <Footer />
     </div>

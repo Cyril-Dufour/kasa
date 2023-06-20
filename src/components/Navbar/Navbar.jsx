@@ -9,9 +9,9 @@ function Navbar() {
           <img src="logo.png" alt="logo"/></a>
       </div>
       <div className='nav-1'>
-        <a href='/home'> Acceuil </a></div>
+        <a href='/home'> ACCEUIL </a></div>
       <div className='nav-2'>
-        <a href='/about'> A Propos </a></div>
+        <a href='/about'> A PROPOS </a></div>
     </nav>
   )
 }

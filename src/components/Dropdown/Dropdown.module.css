@@ -19,3 +19,13 @@
   font-size: 24px;
   
 }
+
+.textVisible i {
+  margin-right: 30px;
+  font-size: 30px;
+}
+
+.titre {
+  margin-left: 20px;
+  font-size: x-large;
+}

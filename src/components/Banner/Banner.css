@@ -10,13 +10,27 @@
     margin: 40px auto;
     max-height: 100px;
     color: white;
-    background-image: url("../../assets/about_cover.png");
+    background-image: url("../../assets/home_cover.png");
     object-fit: cover;
+    font-weight: 500;
+}
+
+.banner h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
 }
 
 @media screen and (width <=700px) {
     .banner {
         margin: 20px;
 
+    }
+    .banner h1{
+        width: 60%;
+        font-size: 28px;
+        margin-top: -5px;
+        margin-left: -100px;
+        
     }
 }

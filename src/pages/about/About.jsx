@@ -4,12 +4,13 @@ import Dropdown from "../../components/Dropdown/Dropdown"
 
 function About() {
   return (<>
-    <div className='banner'> </div>
+    <div className='modifBanner'>
+    <div className='banner'> </div></div>
     <div className="style">
-    <Dropdown />
-    <Dropdown />
-    <Dropdown />
-    <Dropdown />
+    <Dropdown title= "Fiabilité"  />
+    <Dropdown title= "Respect"/>
+    <Dropdown title= "Service"/>
+    <Dropdown title= "Sécurité"/>
 </div>
   </>
     

@@ -30,14 +30,16 @@ function Appartement() {
     <div className='page-appart'> 
       <div className='photo-appart'>
       </div>
-      <ImageBanner imageUrl={selectedFlat.cover} />
+      <ImageBanner pictures={selectedFlat.pictures} />
       <div className='info-appart'>
         <div className='header-appart'>
           <HeaderAppart title={selectedFlat.title} location={selectedFlat.location}  />
         </div>
         <div className='dropdown'>
-          <Dropdown description={selectedFlat.description} />
-          <Dropdown equipments={selectedFlat.equipments} />
+          <Dropdown title= "Description" content={selectedFlat.description} />
+          <Dropdown title= "Equipements" content={selectedFlat.equipments.map((eq, i) => (
+            <li key={i}>{eq}</li>
+          ))} />
         </div>
       </div>
 
