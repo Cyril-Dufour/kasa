@@ -1,21 +1,19 @@
 import React from 'react'
 import "./About.css"
 import Dropdown from "../../components/Dropdown/Dropdown"
+import abouts from "../../data/about.json"
 
 function About() {
   return (<>
     <div className='modifBanner'>
-    <div className='banner'> </div></div>
+      <div className='banner'> </div></div>
     <div className="style">
-    <Dropdown title= "Fiabilité"  />
-    <Dropdown title= "Respect"/>
-    <Dropdown title= "Service"/>
-    <Dropdown title= "Sécurité"/>
-</div>
+      {abouts.map(about =>
+        <Dropdown title={about.title} content={about.text} key={about.id} />
+      )}
+    </div>
+    <div className='footerNoVisible'></div>
   </>
-    
-
-
   )
 
 }

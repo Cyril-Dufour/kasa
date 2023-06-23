@@ -34,12 +34,14 @@
 .proprietaire-appart {
     margin-left: 75rem;
     margin-top: -10rem;
-  
-
 }
 
-.tags-appart {
-    display: flex;
+.tags-appart span{
+    background-color: var(--red);
+    border-radius: 25px;
+    color: white;
+    margin-right: 15px;
+    padding: 5px;
 }
 
 .header-appart {
@@ -47,25 +49,27 @@
     flex-wrap: wrap;
 }
 
-.badge-proprietaire-appart {
+.badge-proprietaire-appart img{
     border: 2px solid rgb(170, 167, 167);
     height: 60px;
     width: 60px;
     border-radius: 50%;
     background-color: rgb(170, 167, 167);
-    margin-left: 15px;
 }
 
 
 .star-proprietaire-appart {
     text-align: center;
     font-size: x-large;
+    color: grey;
+    
 }
 
 .dropdown {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between ;
+    margin-top: 40px;
 }
 
 
@@ -78,12 +82,24 @@
     flex-direction: row;
 }
 
+.dropdown {
+    list-style-type: none;
+}
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 @media screen and (width <=700px) {
     .dropdown {
         display:inline;
-        
-        
-
     }
 }
 

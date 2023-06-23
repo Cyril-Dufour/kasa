@@ -1,6 +1,7 @@
 .container{
     max-width: 48%;
     background-color: #F7F7F7;
+    overflow: hidden;
 }
 .textVisible {
     display: flex;
@@ -11,13 +12,16 @@
     min-height: 52px;
     align-items: center;
    
+   
 }
 .container p {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  
+  animation: slide 0.5s ease-in-out;
+  margin-left: 15px;
+  margin-right: 10px;
 }
 
 .textVisible i {
@@ -28,4 +32,14 @@
 .titre {
   margin-left: 20px;
   font-size: x-large;
+}
+
+
+@keyframes slide {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
 }

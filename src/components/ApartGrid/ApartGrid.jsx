@@ -1,24 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import "./ApartGrid.css"
 import Apart from './Apart.jsx'
+import appartements from '../../data/home.json'
 
 function ApartGrid() {
-  const [apartments, setApartments] = useState([])
-
-  useEffect(fetchApartments, [])
-
-  function fetchApartments() {
-    fetch("home.json")
-      .then((res) => res.json()
-        .then((data) => setApartments(data))
-        .catch((error) => console.log(error))
-      )
-  }
+  
 
   return (
     <div className='grid'>
-      {apartments.map((apartment) => (
-        <Apart title={apartment.title} imageUrl={apartment.cover} id={apartment.id} />
+      {appartements.map((appartement) => (
+        <Apart title={appartement.title} imageUrl={appartement.cover} id={appartement.id} />
       ))}
     </div>
   )

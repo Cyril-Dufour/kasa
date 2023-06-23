@@ -1,51 +1,36 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import "./Appartement.css"
 import Dropdown from "../Dropdown/Dropdown"
-import { useLocation } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import ImageBanner from '../ImageBanner/ImageBanner'
 import HeaderAppart from '../HeaderAppart/HeaderAppart'
-
+import appartements from '../../data/home.json'
 
 
 
 function Appartement() {
-  const location = useLocation();
-  const [selectedFlat, setSelectedFlat] = useState(null);
-  useEffect(fetchApartData, [])
+ console.log(appartements)
+  const { id } = useParams()
+  const selectedFlat = appartements.find(item => item.id === id)
 
-  function fetchApartData() {
-    fetch("home.json")
-      .then((res) => res.json()
-        .then((flats) => {
-          const flat = flats.find((flat) => flat.id === location.state.appartId);
-          setSelectedFlat(flat)
-        })
-        .catch((error) => console.log(error))
-      )
-  }
-  if (selectedFlat == null) return <div></div>
-  console.log(selectedFlat);
   return (
-
-    <div className='page-appart'> 
+    <div className='page-appart'>
       <div className='photo-appart'>
       </div>
       <ImageBanner pictures={selectedFlat.pictures} />
       <div className='info-appart'>
         <div className='header-appart'>
-          <HeaderAppart title={selectedFlat.title} location={selectedFlat.location}  />
+          <HeaderAppart title={selectedFlat.title} location={selectedFlat.location} tags={selectedFlat.tags} host={selectedFlat.host}/>
         </div>
         <div className='dropdown'>
-          <Dropdown title= "Description" content={selectedFlat.description} />
-          <Dropdown title= "Equipements" content={selectedFlat.equipments.map((eq, i) => (
+          <Dropdown title="Description" content={selectedFlat.description} />
+          <Dropdown title="Equipements" content={selectedFlat.equipments.map((eq, i) => (
             <li key={i}>{eq}</li>
           ))} />
         </div>
       </div>
-
-
     </div>
-  ) 
+  )
 }
 
 export default Appartement
