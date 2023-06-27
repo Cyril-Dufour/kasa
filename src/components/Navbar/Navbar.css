@@ -16,19 +16,20 @@
     font-size: 25px;
     
 }
-
-.nav-2 {
-    font-size: 25px;
-}
-
 .navbar a {
     text-decoration: none;
     color: var(--red);
 }
 
-a:hover {
-    text-decoration: underline;
+ 
+
+.active{
+    
 }
+
+.navbar a.active {
+    text-decoration-line: underline ;
+  }
 
 @media screen and (width <=1000px) {
     .nav-1 {
