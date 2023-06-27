@@ -1,8 +1,9 @@
-.container{
+.drop{
     max-width: 48%;
     background-color: #F7F7F7;
     overflow: hidden;
 }
+
 .textVisible {
     display: flex;
     justify-content: space-between ;
@@ -11,10 +12,9 @@
     border-radius: 5px;
     min-height: 52px;
     align-items: center;
-   
-   
 }
-.container p {
+
+.drop p {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -32,6 +32,10 @@
 .titre {
   margin-left: 20px;
   font-size: x-large;
+}
+
+li {
+  list-style-type: none ;
 }
 
 

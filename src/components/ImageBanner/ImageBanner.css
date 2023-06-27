@@ -2,9 +2,9 @@
     position: absolute;
     inset: 0;
     border-radius: 25px;
-    max-height: 300px;
+    max-height: 415px;
     width: 92%;
-    margin: 40px auto;
+    margin: 0 auto;
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -12,9 +12,8 @@
 
 .image__banner{
     position: relative;
-    
+    height: 415px;
 }
-
 
 .image__banner .show{
     opacity: 1;
@@ -52,5 +51,18 @@
     font-size: 80px;
     margin: 40px auto;
     margin-right: 4rem;
+}
+
+@media screen and (width <=1000px) {
+
+    .image__banner .btn-next {
+        font-size: 60px;
+    }
+    
+    .image__banner .btn-previous {
+        font-size: 60px;
+    }
+
+   
 }
 

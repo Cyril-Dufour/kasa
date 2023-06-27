@@ -9,19 +9,18 @@
     max-width: 92%;
     margin: 40px auto;
     max-height: 100px;
-    color: white;
     background-image: url("../../assets/home_cover.png");
     object-fit: cover;
-    font-weight: 500;
 }
 
 .banner h1 {
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
+    color: white;
 }
 
-@media screen and (width <=700px) {
+@media screen and (width <=1000px) {
     .banner {
         margin: 20px;
 

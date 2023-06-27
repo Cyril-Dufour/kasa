@@ -21,7 +21,7 @@
     
 }
 
-@media screen and (width <=700px) {
+@media screen and (width <=1000px) {
     .apart {
         flex-basis: 100%;
     }

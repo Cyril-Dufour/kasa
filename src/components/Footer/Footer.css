@@ -2,9 +2,13 @@
     background-color: black;
     color: white;
     text-align: center;
-    height: 150px;
+    height: 160px;
     bottom: 0;
     width: 100%;
+    margin-top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .footer-logo {

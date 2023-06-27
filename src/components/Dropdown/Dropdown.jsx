@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import style from "./Dropdown.module.css"
+import "./Dropdown.css"
 
 
 function Dropdown({title, content}) {
@@ -11,15 +11,15 @@ function Dropdown({title, content}) {
   }
 console.log(toggleView, "toto");
   return (
-    <div className={style.container}>
+    <div className="drop">
 
-      <div className={style.textVisible} onClick={toggleView}>
+      <div className="textVisible" onClick={toggleView}>
 
-        <div className={style.titre}>{title}</div>
+        <div className="titre">{title}</div>
         <i class="fa-sharp fa-solid fa-chevron-up"  ></i>
       </div>
 
-      <div className={style.text}>
+      <div className="text">
        {textVisible && <p>{content}</p>}
       </div>
     </div>

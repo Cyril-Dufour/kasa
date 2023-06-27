@@ -6,8 +6,27 @@ text-align: center;
 align-items: center;
 gap: 2rem;
 margin-top: 100px;
+padding-bottom: 30px;
 color: var(--red);
+flex-grow: 1;
 
 }
 
+.modifBanner {
+    flex-grow: 1;
+}
 
+.style .drop {
+    width: 100%; 
+    max-width: 1023px;
+}
+
+
+@media screen and (width <=1000px) {
+   .style .drop {
+    width: 80%;
+   }
+    
+
+
+}

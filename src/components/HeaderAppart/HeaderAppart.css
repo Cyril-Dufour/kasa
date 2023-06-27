@@ -1,3 +1,78 @@
 .header-appart{
-    margin-top: 11rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tags-appart span{
+    background-color: var(--red);
+    border-radius: 25px;
+    color: white;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.badge-proprietaire-appart img{
+    border: 2px solid rgb(170, 167, 167);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(170, 167, 167);
+}
+
+.star-proprietaire-appart {
+    font-size: x-large;
+    margin-top: 80px;
+}
+.star-proprietaire-appart i {
+    margin-right: 4px;
+}
+
+.red-star{
+    color: var(--red)
+}
+
+.grey-star{
+    color: #E3E3E3;
+}
+
+ .proprietaire-appart{
+    display: flex;
+   
+}
+
+.nom-proprietaire {
+    display: flex;
+    margin-right: -135px;
+    margin-top: 10px;
+}
+
+.nom-proprietaire h3 {
+    margin-right: 10px;
+}
+
+@media screen and (width <=1000px) {
+    .header-appart{
+     display: block;
+   }
+   .nom-proprietaire{
+    position: absolute;
+    right: 180px;
+    margin-top: 30px;
+   }
+   .star-proprietaire-appart{
+    margin-top: 50px;
+    font-size: medium;
+   
+   }
+   .badge-proprietaire-appart img{
+    height: 50px;
+    width: 50px;
+}
+
+
+   
+
+
 }
