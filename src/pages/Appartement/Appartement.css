@@ -49,12 +49,21 @@
         
         margin-left: -45px;
         margin-bottom: -50px;
-
+    }
+    body{
+        display: flex;
+        width: auto;
+        margin: 15px;
     }
     .titre {
         font-size: 18px;
+
     }
-    .dropdown .drop  {
-        
+    .text p{
+        font-size: 15px;
     }
+    .drop{
+       padding-right: 20px;
+    }
+  
 }
