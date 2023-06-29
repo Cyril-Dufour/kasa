@@ -1,10 +1,12 @@
 .navbar {
     display: flex;
-    margin-left: 50px;
     align-items: center;
-    padding: 15px;
     font-weight: 540;
     max-width: 92%;
+    padding: 10px;
+    margin: auto;
+    max-height: 100px; 
+    gap: 50px;
 }
 
 .navbar_logo {
@@ -12,19 +14,15 @@
 }
 
 .nav-1 {
-    margin-right: 60px;
     font-size: 25px;
+    
     
 }
 .navbar a {
     text-decoration: none;
     color: var(--red);
-}
-
- 
-
-.active{
-    
+    justify-content: end;
+   
 }
 
 .navbar a.active {
@@ -42,10 +40,7 @@
         text-transform: uppercase;
         
     }
-    .navbar_logo{
-        margin-left: -30px;
-        
-    }
+   
     .navbar_logo img {
         width: 85%;
     }
@@ -53,15 +48,20 @@
 
 @media screen and (width <=500px) {
     .nav-1 {
-        font-size: 15px;
+        font-size: 12px;
     }
     .nav-2{
-        font-size: 15px;
+        font-size: 12px;
         width: 30%;
+    }
+
+    .navbar{
+        gap: 1px;
     }
   
     .navbar_logo img {
-        width: 75%;
+        width: 145px;
+        height: 47px;
     }
 }
 

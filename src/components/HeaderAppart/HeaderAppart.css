@@ -1,11 +1,12 @@
-.header-appart{
+.header-appart {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 98%;
     justify-content: space-between;
+    margin: auto;
 }
 
-.tags-appart span{
+.tags-appart span {
     background-color: var(--red);
     border-radius: 25px;
     color: white;
@@ -13,7 +14,8 @@
     padding: 5px;
 }
 
-.badge-proprietaire-appart img{
+
+.badge-proprietaire-appart img {
     border: 2px solid rgb(170, 167, 167);
     height: 60px;
     width: 60px;
@@ -22,24 +24,25 @@
 }
 
 .star-proprietaire-appart {
-    font-size: x-large;
+    font-size: 22px;
     margin-top: 80px;
 }
+
 .star-proprietaire-appart i {
     margin-right: 4px;
 }
 
-.red-star{
+.red-star {
     color: var(--red)
 }
 
-.grey-star{
+.grey-star {
     color: #E3E3E3;
 }
 
- .proprietaire-appart{
+.proprietaire-appart {
     display: flex;
-   
+
 }
 
 .nom-proprietaire {
@@ -51,28 +54,67 @@
 .nom-proprietaire h3 {
     margin-right: 10px;
 }
+@media screen and (width <=1250px) {
 
-@media screen and (width <=1000px) {
-    .header-appart{
-     display: block;
-   }
-   .nom-proprietaire{
-    position: absolute;
-    right: 180px;
-    margin-top: 30px;
-   }
-   .star-proprietaire-appart{
-    margin-top: 50px;
-    font-size: medium;
-   
-   }
-   .badge-proprietaire-appart img{
-    height: 50px;
-    width: 50px;
+    .titre-appart {
+        margin-left: -30px;
+    }
 }
 
+@media screen and (width <=1000px) {
+    .header-appart {
+        display: block;
+    }
 
-   
+    .nom-proprietaire {
+        position: absolute;
+        right: 180px;
+        margin-top: 30px;
+    }
 
+    .star-proprietaire-appart {
+        margin-top: 50px;
+        font-size: 18px;
+        margin-left: -35px;
+    }
+
+    .badge-proprietaire-appart img {
+        height: 50px;
+        width: 50px;
+    }
+    .titre-appart {
+        margin-left: -35px;
+    }
+}
+
+@media screen and (width <=600px) {
+   .titre-appart {
+    margin-top: -55px;
+
+   }
+}
+
+@media screen and (width <=450px) {
+    .titre-appart {
+        margin-top: -155px;
+        margin-left: -50px;
+       }
+       .star-proprietaire-appart{
+        font-size: 16px;
+        margin-left: -50px;
+       }
+       .header-appart h1 {
+        font-size: 20px;
+       }
+       .header-appart h2 {
+        font-size: 18px;
+       }
+       .proprietaire-appart h3 {
+        font-size: 14px;
+       }
+       .tags-appart{
+        margin-right: -25px;
+        font-size: 12px;
+       }
 
 }

@@ -27,8 +27,8 @@
 .textVisible i {
   margin-right: 30px;
   font-size: 30px;
+  
 }
-
 .titre {
   margin-left: 20px;
   font-size: x-large;
@@ -36,6 +36,19 @@
 
 li {
   list-style-type: none ;
+}
+
+.btnDropdown {
+  margin-right: 10px;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(180deg);
+  }
 }
 
 
@@ -47,3 +60,4 @@ li {
       transform: translateY(0);
   }
 }
+

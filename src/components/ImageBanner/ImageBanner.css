@@ -4,15 +4,17 @@
     border-radius: 25px;
     max-height: 415px;
     width: 92%;
-    margin: 0 auto;
+    margin: 0px auto;
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    
 }
 
 .image__banner{
     position: relative;
-    height: 415px;
+    min-height: 415px;
+    
 }
 
 .image__banner .show{
@@ -31,9 +33,10 @@
     position: absolute;
     border-color: transparent;
     color: white;
-    font-size: 80px;
+    font-size: 60px;
     margin: 40px auto;
     margin-left: 4rem;
+    
 }
 
 .image__banner .btn-previous {
@@ -48,21 +51,59 @@
     position: absolute;
     border-color: transparent;
     color: white;
-    font-size: 80px;
+    font-size: 60px;
     margin: 40px auto;
     margin-right: 4rem;
 }
 
-@media screen and (width <=1000px) {
+@media screen and (width <=790px) {
 
     .image__banner .btn-next {
-        font-size: 60px;
+        font-size: 40px;
+        margin-left: 25px;
     }
     
     .image__banner .btn-previous {
-        font-size: 60px;
+        font-size: 40px;
+        margin-right: 25px;
     }
 
+    .image__banner img {
+        min-height: 400px;
+    }
+   
+}
+
+@media screen and (width <=600px) {
+    .image__banner img {
+        min-height: 350px;   
+    }
+
+    .image__banner .btn-next {
+        
+        margin-left: 10px;
+    }
+    
+    .image__banner .btn-previous {
+       
+        margin-right: 10px;
+    }
+   
+}
+
+@media screen and (width <=450px) {
+    .image__banner img {
+        min-height: 255px; 
+    }
+
+    .image__banner .btn-next {
+        
+        margin-top: -10px;
+    }
+    
+    .image__banner .btn-previous {
+       margin-top: -10px;
+    }
    
 }
 

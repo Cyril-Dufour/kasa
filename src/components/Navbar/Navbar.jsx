@@ -9,29 +9,20 @@ function Navbar() {
         <a href='/'>
           <img src="logo.png" alt="logo" /></a>
       </div>
-
-
-
       <NavLink
         to='/'
-        className={({ isActive}) =>
+        className={({ isActive }) =>
           isActive ? "active nav-1" : "nav-1"
-        }
-      >
-       Acceuil
+        }>
+        Acceuil
       </NavLink>
       <NavLink
         to='/about'
-        className={({ isActive}) =>
+        className={({ isActive }) =>
           isActive ? "active nav-1" : "nav-1"
-        }
-      >
+        }>
         A Propos
       </NavLink>
-      {/* <div className='nav-1'>
-        <a href='/'> Acceuil </a></div>
-      <div className='nav-2'>
-        <a href='/about'> A Propos </a></div> */}
     </nav>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './HeaderAppart.css'
-// import Rating from '../Rating/Rating'
+
 
 
 function HeaderAppart(props) {
@@ -32,7 +32,6 @@ function HeaderAppart(props) {
           ))}
         </div>
       </div>
-      {/* <Rating /> */}
     </div>
   )
 }

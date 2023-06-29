@@ -1,6 +1,7 @@
 .apart {
     border-radius: 15px;
-    flex-basis: 30%;
+    height: 340px;
+    width: 340px;
     align-items: end;
     background-size: cover;
     
@@ -12,7 +13,7 @@
     filter: grayscale(30%);
 }
 .titre-location {
-    width: 12%;
+    width: 25%;
     margin-left: 10px;
     color: white;
     position:absolute;
@@ -21,9 +22,10 @@
     
 }
 
-@media screen and (width <=1000px) {
+@media screen and (width <=790px) {
     .apart {
         flex-basis: 100%;
+        max-height: 255px;
     }
     .titre-location {
         width: 50%;

@@ -12,8 +12,9 @@ flex-grow: 1;
 
 }
 
-.modifBanner {
-    flex-grow: 1;
+.modifBanner .banner{
+    background-image: url("../../assets/about_cover.png");
+    height: 223px;
 }
 
 .style .drop {
@@ -22,11 +23,26 @@ flex-grow: 1;
 }
 
 
-@media screen and (width <=1000px) {
+@media screen and (width <=1100px) {
    .style .drop {
-    width: 80%;
+    width: 95%;
+    margin: auto;
    }
-    
-
+   .modifBanner .banner{
+    height: 111px;
+}
 
 }
+
+@media screen and (width <=600px) {
+    .style .drop {
+     width: 90%;
+    }
+ }
+
+ @media screen and (width <=430px) {
+    .style .drop {
+     width: 88%;
+    }
+ }
+

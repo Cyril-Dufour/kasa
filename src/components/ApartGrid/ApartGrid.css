@@ -1,6 +1,6 @@
 .grid {
     background-color: rgb(242, 242, 242);
-    min-height: 50vh;
+    
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +13,7 @@
     margin-bottom: 30px;
 }
 
-@media screen and (width <=1000px) {
+@media screen and (width <=850px) {
     .grid {
         background-color: white;
         max-width: 100%;
