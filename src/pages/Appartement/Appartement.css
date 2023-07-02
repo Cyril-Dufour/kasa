@@ -5,65 +5,61 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    width: 92%;
+    width: 1440px;
     margin: auto;
     object-fit: cover;
 }
 
 .info-appart {
-    margin-left: 60px;
-    align-items: center;
+    width: auto;
     font-weight: 600;
-    max-width: 92%;
     display: flex;
     flex-wrap: wrap;
-    max-width: 92%;
-    margin-bottom: 30px;
     color: var(--red);
 }
 
 .dropdown {
     display: flex;
-    width: 100%;
-    margin-top: 40px;
-    gap: 2rem;
+    width: 92%;
+    justify-content: space-between;
+    margin: auto;  
+    margin-top: 50px;
 }
 
 .dropdown .drop {
+    width: 48%;
+}
+
+.page-appart .drop .visible {
+    height: 249px;
+}
+
+.page-appart{
+    flex-grow: 1;
+}
+
+@media screen and (width <=800px) {
+
+   .dropdown {
+    width: 92%;
+    flex-direction: column;
+    gap: 2rem
+   }
+   .dropdown .drop {
     width: 100%;
-    max-width: 900px;
+    max-height: 143px;
+   }
 }
 
-@media screen and (width <=1000px) {
-    .dropdown {
-        flex-direction: column;
-        
-        margin-left: -45px;
+@media screen and (width <=500px) {
 
-    }
-
-}
-
-@media screen and (width <=600px) {
-    .dropdown {
-        
-        margin-left: -45px;
-        margin-bottom: -50px;
-    }
-    body{
-        display: flex;
-        width: auto;
-        margin: 15px;
-    }
     .titre {
-        font-size: 18px;
-
+        font-size: 16px;
     }
     .text p{
-        font-size: 15px;
+        font-size: 16px;
     }
-    .drop{
-       padding-right: 20px;
-    }
-  
-}
+
+ }
+
+

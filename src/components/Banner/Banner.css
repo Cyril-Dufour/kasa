@@ -23,6 +23,7 @@
     .banner {
         margin: 20px;
         min-height: 111px;
+        border-radius: 0;
 
     }
     .banner h1{

@@ -1,5 +1,4 @@
 .error {
-    font-size: 50px;
     font-weight: 700;
     font-size: 288px;
     line-height: 410.69px;
@@ -31,3 +30,18 @@
 }
 
 
+@media screen and (width <=500px) {
+   .error{
+    font-size: 96px;
+    margin-bottom: -100px;
+   }
+   .texte{
+    font-size: 18px;
+    width: 70%;
+    margin-left: 50px;
+    margin-bottom:  -130px;
+   }
+   .redirectionAcceuil{
+    font-size: 14px;
+   }
+ }

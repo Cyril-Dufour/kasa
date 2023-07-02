@@ -5,7 +5,7 @@ flex-direction: column;
 text-align: center;
 align-items: center;
 gap: 2rem;
-margin-top: 100px;
+margin-top: 40px;
 padding-bottom: 30px;
 color: var(--red);
 flex-grow: 1;
@@ -15,11 +15,16 @@ flex-grow: 1;
 .modifBanner .banner{
     background-image: url("../../assets/about_cover.png");
     height: 223px;
+    
 }
 
 .style .drop {
     width: 100%; 
     max-width: 1023px;
+}
+
+.style .drop p {
+    padding-bottom: 10px;
 }
 
 
@@ -29,7 +34,7 @@ flex-grow: 1;
     margin: auto;
    }
    .modifBanner .banner{
-    height: 111px;
+    height: 223px;
 }
 
 }

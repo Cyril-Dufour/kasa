@@ -12,9 +12,9 @@ import appartements from '../../data/home.json'
 function Appartement() {
   console.log(appartements)
   const { id } = useParams()
-  const selectedFlat = appartements.find(item => item.id === id)
+  const appartSelect = appartements.find(item => item.id === id)
 
-  if (selectedFlat === undefined) {
+  if (appartSelect === undefined) {
     return <Navigate to='/error' />
 
   } else {
@@ -23,12 +23,12 @@ function Appartement() {
       <div className='page-appart'>
         <div className='photo-appart'>
         </div>
-        <ImageBanner pictures={selectedFlat.pictures} />
+        <ImageBanner pictures={appartSelect.pictures} />
         <div className='info-appart'>
-          <HeaderAppart title={selectedFlat.title} location={selectedFlat.location} tags={selectedFlat.tags} host={selectedFlat.host} rating={selectedFlat.rating}/>
+          <HeaderAppart title={appartSelect.title} location={appartSelect.location} tags={appartSelect.tags} host={appartSelect.host} rating={appartSelect.rating}/>
           <div className='dropdown'>
-            <Dropdown title="Description" content={selectedFlat.description} />
-            <Dropdown title="Equipements" content={selectedFlat.equipments.map((eq, i) => (
+            <Dropdown title="Description" content={appartSelect.description} />
+            <Dropdown title="Equipements" content={appartSelect.equipments.map((eq, i) => (
               <li key={i}>{eq}</li>
             ))} />
           </div>

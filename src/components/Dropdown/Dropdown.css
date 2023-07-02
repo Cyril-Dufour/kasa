@@ -1,70 +1,57 @@
-.drop{
-    max-width: 48%;
-    background-color: #F7F7F7;
-    overflow: hidden;
-}
-
-.textVisible {
-    display: flex;
-    justify-content: space-between ;
-    background-color: #ff6060;
-    color: white;
-    border-radius: 5px;
-    min-height: 52px;
-    align-items: center;
+.barre {
+  display: flex;
+  justify-content: space-between ;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 5px;
+  min-height: 52px;
+  align-items: center;
 }
 
 .drop p {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  animation: slide 0.5s ease-in-out;
-  margin-left: 15px;
-  margin-right: 10px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+animation: slide 0.5s ease-in-out;
+margin-left: 15px;
+margin-right: 10px;
 }
 
-.textVisible i {
-  margin-right: 30px;
-  font-size: 30px;
-  
+.barre i {
+margin-right: 30px;
+font-size: 30px;
+
 }
 .titre {
-  margin-left: 20px;
-  font-size: x-large;
+margin-left: 20px;
+font-size: x-large;
 }
 
+.text {
+background-color: #F6F6F6;
+border-radius: 10px;
+margin-top: -30px;
+padding: 30px 20px 0px;
+position: relative;
+z-index: -1;
+}
+
+
 li {
-  list-style-type: none ;
+list-style-type: none ;
 }
 
 .btnDropdown {
-  margin-right: 10px;
+margin-right: 10px;
 }
 
-@keyframes rotate {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(180deg);
-  }
+/* @keyframes slide {
+0% {
+    transform: translateY(-100%);
 }
-
-
-@keyframes slide {
-  0% {
-      transform: translateY(-100%);
-  }
-  100% {
-      transform: translateY(0);
-  }
+100% {
+    transform: translateY(0);
 }
-
-@media screen and (width <=600px) {
-  .textVisible{
-    margin-right: -20px;
-  }
-
-}
+} */
 

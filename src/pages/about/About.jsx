@@ -2,7 +2,7 @@ import React from 'react'
 import "./About.css"
 import Dropdown from "../../components/Dropdown/Dropdown"
 import abouts from "../../data/about.json"
-import Banner from "../../components/Banner/Banner"
+
 
 function About() {
   return (<>

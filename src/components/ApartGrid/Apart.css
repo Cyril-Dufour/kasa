@@ -13,13 +13,20 @@
     filter: grayscale(30%);
 }
 .titre-location {
-    width: 25%;
+    width: 15%;
     margin-left: 10px;
     color: white;
     position:absolute;
-    margin-top: -60px;
+    margin-top: -70px;
     font-size: 18px;
     
+}
+
+@media screen and (width <=1000px) {
+    
+    .titre-location {
+        width: 30%;
+    }
 }
 
 @media screen and (width <=790px) {
@@ -29,6 +36,5 @@
     }
     .titre-location {
         width: 50%;
-        font-size: large;
     }
 }
