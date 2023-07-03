@@ -21,7 +21,7 @@
     opacity: 1;
 }
 
-.image__banner .btn-next {
+.image__banner .btn-suivant {
     cursor: pointer;
     width: 5rem;
     height: 300px;
@@ -39,7 +39,7 @@
     
 }
 
-.image__banner .btn-previous {
+.image__banner .btn-precedent {
     cursor: pointer;
     width: 5rem;
     height: 300px;
@@ -69,7 +69,7 @@
     }
 
     .image__banner img {
-        min-height: 400px;
+        height: 350px;
     }
    
 }
@@ -88,22 +88,17 @@
        
         margin-right: 10px;
     }
+    .image__banner .btn-suivant {
+        font-size: 40px;
+        margin-left: 5px;
+    }
+
+    .image__banner .btn-precedent {
+        font-size: 40px;
+        margin-right: 5px;
+    }
    
 }
 
-/* @media screen and (width <=450px) {
-    .image__banner img {
-        min-height: 255px; 
-    }
 
-    .image__banner .btn-next {
-        
-        margin-top: -10px;
-    }
-    
-    .image__banner .btn-previous {
-       margin-top: -10px;
-    }
-   
-} */
 

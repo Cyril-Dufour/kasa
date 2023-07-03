@@ -4,7 +4,7 @@
   background-color: #ff6060;
   color: white;
   border-radius: 5px;
-  min-height: 52px;
+  height: 52px;
   align-items: center;
 }
 
@@ -12,8 +12,8 @@
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-animation: slide 0.5s ease-in-out;
+font-size: 18px;
+/* animation: slide 0.5s ease-in-out; */
 margin-left: 15px;
 margin-right: 10px;
 }
@@ -24,7 +24,7 @@ font-size: 30px;
 
 }
 .titre {
-margin-left: 20px;
+margin-left: 18px;
 font-size: x-large;
 }
 
@@ -55,3 +55,9 @@ margin-right: 10px;
 }
 } */
 
+@media screen and (width <=700px) {
+
+  .barre {
+    height: 30px;
+  }
+}

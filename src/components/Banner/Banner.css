@@ -9,7 +9,7 @@
     margin: 40px auto;
     max-height: 223px;
     background-image: url("../../assets/home_cover.png");
-    opacity: calc(80%);
+    filter: grayscale(60%);
 }
 
 .banner h1 {

@@ -24,10 +24,11 @@ function ImageBanner(props) {
 
   return (
     <div className='image__banner'>
+     
       {pictures.map((pic, i) => <img key={pic} src={pic} alt="" className={getClassName(i)}></img>)}
       <div className='btn'>
-      <button className='btn-next' onClick={photoSuivante}><i class="fa-sharp fa-solid fa-chevron-left"></i></button>
-      <button className='btn-previous' onClick={photoPrecedente}><i class="fa-sharp fa-solid fa-chevron-right"></i></button>
+      <button className='btn-suivant' onClick={photoSuivante}><i class="fa-sharp fa-solid fa-chevron-left"></i></button>
+      <button className='btn-precedent' onClick={photoPrecedente}><i class="fa-sharp fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
   )
