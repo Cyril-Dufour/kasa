@@ -21,6 +21,12 @@
     opacity: 1;
 }
 
+.image__banner .numerotation {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
 .image__banner .btn-suivant {
     cursor: pointer;
     width: 5rem;
