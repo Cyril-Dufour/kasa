@@ -22,9 +22,11 @@
 }
 
 .image__banner .numerotation {
-    position: relative;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
     color: white;
-    text-align: center;
+    font-size: 18px;
 }
 
 .image__banner .btn-suivant {
@@ -76,6 +78,9 @@
 
     .image__banner img {
         height: 350px;
+    }
+    .image__banner .numerotation {
+        bottom: 80px;
     }
    
 }

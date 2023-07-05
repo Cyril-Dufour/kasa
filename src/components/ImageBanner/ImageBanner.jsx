@@ -30,8 +30,8 @@ function ImageBanner(props) {
       ))}
       {pictures.length > 1 && (
         <div className='btn'>
-          <button className='btn-suivant' onClick={photoSuivante}><i class="fa-sharp fa-solid fa-chevron-left"></i></button>
-          <button className='btn-precedent' onClick={photoPrecedente}><i class="fa-sharp fa-solid fa-chevron-right"></i></button>
+          <button className='btn-suivant' onClick={photoSuivante}><i className="fa-sharp fa-solid fa-chevron-left"></i></button>
+          <button className='btn-precedent' onClick={photoPrecedente}><i className="fa-sharp fa-solid fa-chevron-right"></i></button>
         </div>
       )}
       <div className='numerotation'>{`${photoActuel + 1}/${pictures.length}`}</div>

@@ -1,20 +1,16 @@
 import React from 'react'
 import './HeaderAppart.css'
 
-
-
 function HeaderAppart(props) {
   
-  console.log("props appart:", props)
-
   return (
     <div className='header-appart'>
       <div className='titre-appart'>
         <h1>{props.title}</h1>
         <h2>{props.location}</h2>
         <div className='tags-appart'>
-          {props.tags.map(tag => (
-            <span>{tag}</span>
+          {props.tags.map((tag, i) => (
+            <span key={i}>{tag}</span>
           ))}
         </div>
       </div>
@@ -27,8 +23,8 @@ function HeaderAppart(props) {
           </div>
         </div>
         <div className='star-proprietaire-appart'>
-          {[1, 2, 3, 4, 5].map(num => (
-            <span className= {props.rating >= num ? "red-star" : "grey-star"}><i class="fa-solid fa-star"></i></span>
+          {[1, 2, 3, 4, 5].map((num) => (
+            <span className={props.rating >= num ? "red-star" : "grey-star"} key={num} ><i className="fa-solid fa-star"></i></span>
           ))}
         </div>
       </div>
